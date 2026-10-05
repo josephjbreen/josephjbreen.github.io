@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joseph Breen — Mathematics</title>
+<meta name="description" content="Joseph Breen, Assistant Professor of Mathematics at the University of Alabama. Publications, teaching, contact information, and photography.">
+<style>html,body{margin:0;padding:0;background:#fff;}</style>
+</head>
+<body>
+<!--
+  Joseph Breen — index.html, prepared for GitHub Pages.
+  Internal page links are relative and open in the same tab.
+  The JB headshot block and the slideshow photos/captions are placeholders.
+  Slideshow images are in assets/; source credits remain with each slide.
+-->
+<style>
+  #jb-home {
+    --jh-paper: #ffffff;
+    --jh-ink: #2a2728;
+    --jh-muted: #6d6668;
+    --jh-crimson: #9e1b32;
+    --jh-on-crimson: #ffffff;
+    --jh-rule: #e5dfe0;
+    --jh-soft: #fcf5f6;
+    --jh-photo-mat: #f3f0ef;
+    --jh-portrait-top: #f8f5f3;
+    --jh-portrait-bottom: #e9e1df;
+    --jh-portrait-letters: #987d82;
+    --jh-link-line: #d7a6af;
+    --jh-portrait-shadow: rgba(42, 39, 40, .07);
+    background: var(--jh-paper);
+    color: var(--jh-ink);
+    color-scheme: light;
+    font: 15px/1.65 Arial, Helvetica, sans-serif;
+    padding: 26px 34px 38px;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+  }
+  #jb-home *, #jb-home *::before, #jb-home *::after { box-sizing: border-box; }
+  #jb-home .jh-inner { max-width: 920px; margin: 0 auto; }
+  #jb-home a { color: var(--jh-crimson); text-decoration-color: var(--jh-link-line); text-underline-offset: 4px; }
+  #jb-home a:hover { text-decoration-color: currentColor; }
+  #jb-home a:focus-visible, #jb-home button:focus-visible { outline: 2px solid var(--jh-crimson); outline-offset: 4px; border-radius: 2px; }
+  #jb-home .jh-topbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 28px; padding-bottom: 19px; border-bottom: 1px solid var(--jh-rule); }
+  #jb-home .jh-wordmark { margin: 0; color: var(--jh-muted); font-size: 12px; letter-spacing: .055em; }
+  #jb-home .jh-nav { display: flex; flex-wrap: wrap; gap: 9px; }
+  #jb-home .jh-nav a { display: inline-flex; justify-content: center; align-items: center; gap: 9px; min-height: 42px; padding: 10px 15px; border: 1px solid var(--jh-link-line); border-radius: 4px; background: var(--jh-soft); font-size: 15px; font-weight: 500; line-height: 1.2; text-decoration: none; white-space: nowrap; transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease; }
+  #jb-home .jh-nav a:hover { background: var(--jh-crimson); border-color: var(--jh-crimson); color: var(--jh-on-crimson); text-decoration: none; }
+  #jb-home .jh-nav .jh-arrow { font-size: 12px; opacity: .8; }
+  #jb-home .jh-intro { display: grid; grid-template-columns: minmax(0, 1fr) 210px; grid-template-rows: auto 1fr; column-gap: 52px; row-gap: 17px; margin: 35px 0 36px; }
+  #jb-home .jh-heading { grid-column: 1; grid-row: 1; min-width: 0; }
+  #jb-home .jh-heading::before { content: ''; display: block; width: 34px; height: 2px; margin-bottom: 13px; background: var(--jh-crimson); }
+  #jb-home h1 { margin: 0 0 7px; font: 400 43px/1.12 Georgia, 'Times New Roman', serif; letter-spacing: -.025em; }
+  #jb-home .jh-role { margin: 0; color: var(--jh-muted); font-size: 14px; line-height: 1.5; }
+  #jb-home .jh-bio { grid-column: 1; grid-row: 2; min-width: 0; }
+  #jb-home .jh-bio p { margin: 0 0 13px; }
+  #jb-home .jh-headshot { grid-column: 2; grid-row: 1 / span 2; align-self: start; margin: 0; padding: 5px; aspect-ratio: 4 / 5; overflow: hidden; border: 1px solid var(--jh-rule); border-radius: 2px; background: var(--jh-paper); box-shadow: 0 3px 12px var(--jh-portrait-shadow); }
+  #jb-home .jh-headshot img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  #jb-home .jh-headshot-placeholder { height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 14px; background: linear-gradient(150deg, var(--jh-portrait-top), var(--jh-portrait-bottom)); }
+  #jb-home .jh-headshot-initials { color: var(--jh-portrait-letters); font: 400 66px/1 Georgia, 'Times New Roman', serif; letter-spacing: -.045em; }
+  #jb-home .jh-headshot-label { color: var(--jh-muted); font-size: 11px; letter-spacing: .11em; text-transform: uppercase; }
+  #jb-home .jh-contact { display: flex; flex-wrap: wrap; gap: 12px 35px; margin: 21px 0 0; padding-top: 15px; border-top: 1px solid var(--jh-rule); }
+  #jb-home .jh-contact div { min-width: 0; }
+  #jb-home .jh-contact dt { color: var(--jh-muted); font-size: 11px; letter-spacing: .07em; text-transform: uppercase; }
+  #jb-home .jh-contact dd { margin: 3px 0 0; font-size: 14px; }
+  #jb-home .jh-contact a { overflow-wrap: anywhere; }
+  #jb-home .jh-gallery { scroll-margin-top: 20px; border-top: 1px solid var(--jh-rule); padding-top: 22px; }
+  #jb-home .jh-photo-count { color: var(--jh-muted); font: 12px/1.5 'Courier New', Courier, monospace; white-space: nowrap; margin-right: 10px; }
+  #jb-home .jh-stage { position: relative; aspect-ratio: 2 / 1; overflow: hidden; background: var(--jh-photo-mat); border-radius: 2px; }
+  #jb-home .jh-slide { position: absolute; inset: 0; margin: 0; opacity: 0; pointer-events: none; transition: opacity 750ms ease; }
+  #jb-home .jh-slide.is-active { opacity: 1; }
+  #jb-home .jh-slide img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  #jb-home .jh-gallery-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 9px 20px; padding-top: 10px; }
+  #jb-home .jh-caption { margin: 0; font-size: 13px; line-height: 1.5; }
+  #jb-home .jh-credit { color: var(--jh-muted); font-size: 11px; line-height: 1.5; text-decoration: none; }
+  #jb-home .jh-credit:hover { color: var(--jh-crimson); text-decoration: underline; }
+  #jb-home .jh-gallery-actions { display: none; align-items: center; gap: 3px; }
+  #jb-home.jh-ready .jh-gallery-actions { display: flex; }
+  #jb-home .jh-gallery-actions button { display: inline-flex; justify-content: center; align-items: center; min-width: 34px; min-height: 34px; padding: 4px 8px; border: 0; border-radius: 3px; background: transparent; color: var(--jh-ink); font: 400 14px/1.2 Arial, Helvetica, sans-serif; }
+  #jb-home .jh-gallery-actions button[data-action="toggle"] { min-width: 60px; font-size: 12px; }
+  #jb-home .jh-gallery-actions button:hover { background: var(--jh-soft); color: var(--jh-crimson); }
+  #jb-home .jh-gallery-actions button:disabled { opacity: .4; }
+  #jb-home .jh-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+  @media (max-width: 680px) {
+    #jb-home { padding: 20px 20px 28px; font-size: 14px; }
+    #jb-home .jh-topbar { gap: 13px; padding-bottom: 17px; }
+    #jb-home .jh-nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; gap: 8px; }
+    #jb-home .jh-nav a { min-height: 44px; padding: 10px 6px; font-size: 14px; }
+    #jb-home .jh-nav .jh-arrow { display: none; }
+    #jb-home .jh-intro { grid-template-columns: minmax(0, 1fr) 110px; grid-template-rows: auto auto; column-gap: 22px; row-gap: 21px; margin: 27px 0 28px; }
+    #jb-home h1 { font-size: 35px; }
+    #jb-home .jh-role { font-size: 13px; }
+    #jb-home .jh-heading { align-self: center; }
+    #jb-home .jh-headshot { grid-row: 1; padding: 4px; }
+    #jb-home .jh-headshot-initials { font-size: 43px; }
+    #jb-home .jh-headshot-placeholder { gap: 9px; }
+    #jb-home .jh-headshot-label { font-size: 11px; letter-spacing: .035em; }
+    #jb-home .jh-bio { grid-column: 1 / -1; grid-row: 2; }
+    #jb-home .jh-contact { margin-top: 18px; }
+    #jb-home .jh-stage { aspect-ratio: 3 / 2; }
+    #jb-home .jh-gallery { padding-top: 19px; }
+  }
+  @media (max-width: 370px) {
+    #jb-home { padding-left: 17px; padding-right: 17px; }
+    #jb-home .jh-nav a { font-size: 13px; }
+    #jb-home .jh-intro { grid-template-columns: minmax(0, 1fr) 90px; column-gap: 17px; }
+    #jb-home h1 { font-size: 32px; }
+    #jb-home .jh-contact { column-gap: 22px; }
+  }
+  @media (pointer: coarse) {
+    #jb-home .jh-nav a { min-height: 44px; }
+    #jb-home .jh-gallery-actions button { min-width: 44px; min-height: 44px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #jb-home .jh-slide, #jb-home .jh-nav a { transition: none; }
+  }
+  @media print {
+    #jb-home { padding: 0; }
+    #jb-home .jh-nav, #jb-home .jh-gallery-actions { display: none; }
+    #jb-home .jh-gallery { break-inside: avoid; }
+  }
+</style>
+
+<main id="jb-home" aria-labelledby="jh-name">
+  <div class="jh-inner">
+    <header class="jh-topbar">
+      <p class="jh-wordmark">Mathematics · University of Alabama</p>
+      <nav class="jh-nav" aria-label="Main navigation">
+        <a href="publications.html">Publications </a>
+        <a href="teaching.html">Teaching </a>
+        <a href="other.html">Other </a>
+      </nav>
+    </header>
+
+    <section class="jh-intro" aria-label="About Joseph Breen">
+      <div class="jh-heading">
+        <h1 id="jh-name">Joseph Breen</h1>
+        <p class="jh-role">Assistant Professor of Mathematics</p>
+      </div>
+      <figure class="jh-headshot" aria-label="Placeholder for Joseph Breen's headshot">
+        <div class="jh-headshot-placeholder">
+          <span class="jh-headshot-initials" aria-hidden="true">JB</span>
+          <span class="jh-headshot-label">Headshot</span>
+        </div>
+      </figure>
+      <div class="jh-bio">
+        <p>I am an assistant professor (tenure-track) at the <a href="https://math.ua.edu/" target="_blank" rel="noopener noreferrer">University of Alabama</a>. My research interests are in contact and symplectic topology.</p>
+        <p>Previously, I was a postdoc at the <a href="https://uiowa.edu/" target="_blank" rel="noopener noreferrer">University of Iowa</a> from 2022–2025. I completed my Ph.D. at <a href="https://www.ucla.edu/" target="_blank" rel="noopener noreferrer">UCLA</a> in 2022 under <a href="https://www.math.ucla.edu/~honda/" target="_blank" rel="noopener noreferrer">Ko Honda</a>, and my B.A. in mathematics at <a href="https://www.northwestern.edu/" target="_blank" rel="noopener noreferrer">Northwestern University</a> in 2016.</p>
+        <dl class="jh-contact">
+          <div><dt>Email</dt><dd><a href="mailto:jjbreen@ua.edu">jjbreen@ua.edu</a></dd></div>
+          <div><dt>Office</dt><dd>GP 223A</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="jh-gallery" aria-label="Photographs" aria-roledescription="carousel">
+      <div class="jh-stage" data-gallery-stage="">
+        <figure class="jh-slide is-active" data-slide="" data-caption="Lake and mist" data-credit="Placeholder photo · Ivan Rohovchenko / Unsplash" data-source="https://unsplash.com/photos/a-lake-with-trees-and-mountains-in-the-background-8fVmVlnrN5k" aria-hidden="false">
+          <img src="assets/home-lake.jpg" alt="Misty mountains and dark evergreen trees reflected in a still lake." width="1200" height="600">
+        </figure>
+        <figure class="jh-slide" data-slide="" data-caption="Coastal light" data-credit="Placeholder photo · Unsplash" data-source="https://unsplash.com/es/s/fotos/cielo-pastel" aria-hidden="true">
+          <img src="assets/home-coast.jpg" alt="A quiet seashore beneath a pale blue and pink sky." width="1200" height="600">
+        </figure>
+      </div>
+      <div class="jh-gallery-footer">
+        <div>
+          <p class="jh-caption" data-photo-caption="">Lake and mist</p>
+          <a class="jh-credit" data-photo-credit="" href="https://unsplash.com/photos/a-lake-with-trees-and-mountains-in-the-background-8fVmVlnrN5k" target="_blank" rel="noopener noreferrer">Placeholder photo · Ivan Rohovchenko / Unsplash</a>
+        </div>
+        <div class="jh-gallery-actions" aria-label="Slideshow controls">
+          <span class="jh-photo-count" data-photo-count="" aria-hidden="true">01 / 02</span>
+          <button type="button" class="cursor-interaction" data-action="previous" aria-label="Previous photograph" disabled>←</button>
+          <button type="button" class="cursor-interaction" data-action="toggle" aria-label="Pause slideshow" disabled>Pause</button>
+          <button type="button" class="cursor-interaction" data-action="next" aria-label="Next photograph" disabled>→</button>
+        </div>
+      </div>
+      <p class="jh-sr-only" data-photo-status="" role="status" aria-live="polite" aria-atomic="true"></p>
+    </section>
+  </div>
+</main>
+
+<script>
+(() => {
+  const root = document.getElementById('jb-home');
+  if (!root || root.dataset.galleryReady === 'true') return;
+  const gallery = root.querySelector('.jh-gallery');
+  const slides = Array.from(root.querySelectorAll('[data-slide]'));
+  const previous = root.querySelector('[data-action="previous"]');
+  const next = root.querySelector('[data-action="next"]');
+  const toggle = root.querySelector('[data-action="toggle"]');
+  const caption = root.querySelector('[data-photo-caption]');
+  const credit = root.querySelector('[data-photo-credit]');
+  const count = root.querySelector('[data-photo-count]');
+  const status = root.querySelector('[data-photo-status]');
+  if (!gallery || slides.length < 2 || !previous || !next || !toggle || !caption || !credit || !count || !status) return;
+  root.dataset.galleryReady = 'true';
+  root.classList.add('jh-ready');
+  [previous, next, toggle].forEach(button => { button.disabled = false; });
+
+  const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const interval = 9000;
+  let current = 0;
+  let playing = !motion.matches;
+  let hovering = false;
+  let focusing = false;
+  let timer = null;
+
+  function renderPlayState() {
+    toggle.textContent = playing ? 'Pause' : 'Play';
+    toggle.setAttribute('aria-label', playing ? 'Pause slideshow' : 'Play slideshow');
+  }
+
+  function schedule() {
+    window.clearTimeout(timer);
+    timer = null;
+    if (!playing || hovering || focusing || document.hidden || !root.isConnected) return;
+    timer = window.setTimeout(() => {
+      show(current + 1, false);
+      schedule();
+    }, interval);
+  }
+
+  function show(index, announce) {
+    current = (index + slides.length) % slides.length;
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('is-active', i === current);
+      slide.setAttribute('aria-hidden', String(i !== current));
+    });
+    const slide = slides[current];
+    caption.textContent = slide.dataset.caption;
+    credit.textContent = slide.dataset.credit;
+    credit.href = slide.dataset.source;
+    count.textContent = String(current + 1).padStart(2, '0') + ' / ' + String(slides.length).padStart(2, '0');
+    if (announce) status.textContent = 'Photograph ' + (current + 1) + ' of ' + slides.length + ': ' + slide.dataset.caption;
+  }
+
+  function navigate(delta) {
+    playing = false;
+    show(current + delta, true);
+    renderPlayState();
+    schedule();
+  }
+
+  previous.addEventListener('click', () => navigate(-1));
+  next.addEventListener('click', () => navigate(1));
+  toggle.addEventListener('click', () => {
+    playing = !playing;
+    renderPlayState();
+    schedule();
+  });
+  gallery.addEventListener('mouseenter', () => { hovering = true; schedule(); });
+  gallery.addEventListener('mouseleave', () => { hovering = false; schedule(); });
+  gallery.addEventListener('focusin', () => { focusing = true; schedule(); });
+  gallery.addEventListener('focusout', event => {
+    focusing = Boolean(event.relatedTarget && gallery.contains(event.relatedTarget));
+    schedule();
+  });
+  document.addEventListener('visibilitychange', schedule);
+  motion.addEventListener('change', event => {
+    if (event.matches) playing = false;
+    renderPlayState();
+    schedule();
+  });
+
+  renderPlayState();
+  schedule();
+})();
+</script>
+
+</body>
+</html>

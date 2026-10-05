@@ -1,0 +1,184 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1" name="viewport"><title>Other — Joseph Breen</title><meta content="Lecture notes and music by Joseph Breen." name="description"><style>html,body{margin:0;padding:0;background:#fff;}</style></head><body><!--
+  Joseph Breen — other.html, prepared for GitHub Pages.
+  Internal page links are relative and open in the same tab.
+  Daily Bruin image: https://wp.dailybruin.com/images/2022/04/image.png
+  Photo: Anya Yakimenko / Daily Bruin; illustration: Katelyn Dang.
+-->
+<style>
+  #jb-other {
+    --jo-paper: #ffffff;
+    --jo-ink: #2a2728;
+    --jo-muted: #6d6668;
+    --jo-accent: #9e1b32;
+    --jo-on-accent: #ffffff;
+    --jo-line: #e5dfe0;
+    --jo-soft: #fcf5f6;
+    --jo-panel: #f7f4f4;
+    --jo-link-line: #d7a6af;
+    margin: 0;
+    padding: 28px 32px 36px;
+    box-sizing: border-box;
+    color: var(--jo-ink);
+    background: var(--jo-paper);
+    color-scheme: light;
+    font: 14px/1.45 Arial, Helvetica, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  #jb-other *, #jb-other *::before, #jb-other *::after { box-sizing: border-box; }
+  #jb-other .jo-inner { max-width: 920px; margin: 0 auto; }
+  #jb-other .jo-topbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 28px; padding-bottom: 19px; border-bottom: 1px solid var(--jo-line); }
+  #jb-other .jo-identity { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; min-width: 0; }
+  #jb-other .jo-name { margin: 0; font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+  #jb-other .jo-affiliation { margin: 0; color: var(--jo-muted); font-size: 13px; }
+  #jb-other .jo-nav { display: flex; flex-wrap: wrap; gap: 9px; }
+  #jb-other .jo-nav a { display: inline-flex; justify-content: center; align-items: center; gap: 9px; min-height: 42px; padding: 10px 15px; border: 1px solid var(--jo-link-line); border-radius: 4px; background: var(--jo-soft); color: var(--jo-accent); font-size: 15px; font-weight: 500; line-height: 1.2; text-decoration: none; white-space: nowrap; transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease; }
+  #jb-other .jo-nav a:hover { background: var(--jo-accent); border-color: var(--jo-accent); color: var(--jo-on-accent); }
+  #jb-other .jo-nav .jo-arrow { font-size: 12px; opacity: .8; }
+  #jb-other a:focus-visible { outline: 2px solid var(--jo-accent); outline-offset: 4px; border-radius: 2px; }
+  #jb-other .jo-page-header { padding-bottom: 27px; }
+  #jb-other h1 { margin: 18px 0 0; font: 400 34px/1.15 Georgia, 'Times New Roman', serif; letter-spacing: -.025em; }
+  #jb-other .jo-section + .jo-section { margin-top: 36px; }
+  #jb-other h2 { margin: 0; padding-bottom: 12px; color: var(--jo-accent); font: 400 22px/1.3 Georgia, 'Times New Roman', serif; letter-spacing: -.01em; background-image: linear-gradient(90deg, var(--jo-accent) 0 28px, var(--jo-line) 28px 100%); background-size: 100% 1px; background-position: left bottom; background-repeat: no-repeat; }
+  #jb-other .jo-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 34px; list-style: none; margin: 0; padding: 0; }
+  #jb-other .jo-links > li { min-width: 0; margin: 0; padding: 0; }
+  #jb-other .jo-resource { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; height: 100%; min-height: 82px; padding: 16px 0; border-bottom: 1px solid var(--jo-line); color: var(--jo-ink); text-decoration: none; transition: background-color 160ms ease, color 160ms ease; }
+  #jb-other .jo-resource-main { min-width: 0; }
+  #jb-other .jo-resource-title { display: block; font: 400 17px/1.35 Georgia, 'Times New Roman', serif; overflow-wrap: break-word; }
+  #jb-other .jo-meta { display: block; margin-top: 5px; color: var(--jo-muted); font-size: 12px; line-height: 1.5; }
+  #jb-other .jo-resource-action { flex: 0 0 auto; display: inline-flex; align-items: center; gap: 7px; padding-top: 3px; color: var(--jo-accent); font-size: 11px; line-height: 1.5; letter-spacing: .035em; white-space: nowrap; }
+  #jb-other .jo-resource-action .jo-arrow { font-size: 13px; letter-spacing: 0; }
+  #jb-other .jo-resource:hover { background: var(--jo-soft); }
+  #jb-other .jo-resource:hover .jo-resource-title { color: var(--jo-accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  #jb-other .jo-music { padding: 22px; border-top: 3px solid var(--jo-accent); background: var(--jo-panel); }
+  #jb-other .jo-music-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 19px; }
+  #jb-other .jo-music h2 { padding: 0; color: var(--jo-ink); background: none; }
+  #jb-other .jo-channel { display: inline-flex; align-items: center; gap: 10px; min-height: 42px; padding: 9px 13px; border: 1px solid var(--jo-link-line); border-radius: 4px; color: var(--jo-accent); background: var(--jo-paper); font-size: 14px; line-height: 1.3; text-decoration: none; transition: background-color 160ms ease, color 160ms ease; }
+  #jb-other .jo-channel:hover { background: var(--jo-accent); color: var(--jo-on-accent); }
+  #jb-other .jo-article { display: grid; grid-template-columns: minmax(180px, 28%) minmax(0, 1fr); overflow: hidden; border: 1px solid var(--jo-line); border-radius: 4px; color: var(--jo-ink); background: var(--jo-paper); text-decoration: none; }
+  #jb-other .jo-article-media { min-width: 0; min-height: 190px; position: relative; background: var(--jo-paper); }
+  #jb-other .jo-article-image { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }
+  #jb-other .jo-article-body { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; padding: 20px 22px; }
+  #jb-other .jo-article-source { display: block; margin-bottom: 8px; color: var(--jo-muted); font-size: 11px; line-height: 1.5; letter-spacing: .04em; }
+  #jb-other .jo-article-title { display: block; font: 400 19px/1.3 Georgia, 'Times New Roman', serif; }
+  #jb-other .jo-article-cta { display: inline-flex; gap: 8px; margin-top: 13px; color: var(--jo-accent); font-size: 12px; }
+  #jb-other .jo-article:hover { border-color: var(--jo-link-line); }
+  #jb-other .jo-article:hover .jo-article-title { color: var(--jo-accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  #jb-other .jo-image-credit { margin: 8px 0 0; color: var(--jo-muted); font-size: 11px; text-align: right; }
+  @media (max-width: 680px) {
+    #jb-other .jo-topbar { gap: 13px; padding-bottom: 17px; }
+    #jb-other .jo-nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; gap: 8px; }
+    #jb-other .jo-nav a { min-height: 44px; padding: 10px 6px; font-size: 14px; }
+    #jb-other .jo-nav .jo-arrow { display: none; }
+  }
+  @media (max-width: 620px) {
+    #jb-other { padding: 22px 18px 28px; }
+    #jb-other h1 { font-size: 30px; }
+    #jb-other h2 { font-size: 21px; }
+    #jb-other .jo-page-header { padding-bottom: 25px; }
+    #jb-other .jo-links { grid-template-columns: minmax(0, 1fr); }
+    #jb-other .jo-section + .jo-section { margin-top: 28px; }
+    #jb-other .jo-resource { min-height: 76px; padding: 14px 0; }
+    #jb-other .jo-music { padding: 18px 16px; }
+    #jb-other .jo-music-header { margin-bottom: 16px; }
+    #jb-other .jo-article { grid-template-columns: minmax(0, 1fr); }
+    #jb-other .jo-article-media { min-height: 0; aspect-ratio: 16 / 10; }
+    #jb-other .jo-article-body { padding: 17px; }
+    #jb-other .jo-article-title { font-size: 18px; }
+  }
+  @media (max-width: 370px) {
+    #jb-other .jo-nav a { font-size: 13px; }
+  }
+  @media (pointer: coarse) {
+    #jb-other .jo-nav a, #jb-other .jo-channel { min-height: 44px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #jb-other .jo-nav a, #jb-other .jo-resource, #jb-other .jo-channel { transition: none; }
+  }
+  @media print {
+    #jb-other { padding: 0; }
+    #jb-other .jo-nav { display: none; }
+    #jb-other .jo-resource { break-inside: avoid; }
+    #jb-other h2 { break-after: avoid; }
+  }
+</style>
+
+<main id="jb-other" aria-labelledby="jo-title">
+  <div class="jo-inner">
+    <header class="jo-page-header">
+      <div class="jo-topbar">
+        <div class="jo-identity">
+          <p class="jo-name">Joseph Breen</p>
+          <p class="jo-affiliation">Mathematics · University of Alabama</p>
+        </div>
+        <nav class="jo-nav" aria-label="Main navigation">
+          <a href="index.html">Home </a>
+          <a href="publications.html">Publications </a>
+          <a href="teaching.html">Teaching </a>
+        </nav>
+      </div>
+      <h1 id="jo-title">Other</h1>
+    </header>
+
+    <section class="jo-section" aria-labelledby="jo-notes-title">
+      <h2 id="jo-notes-title">Lecture notes</h2>
+      <ul class="jo-links" role="list">
+        <li>
+          <a class="jo-resource" href="https://drive.google.com/file/d/1umpdeXtTaMQhnPJU3h0BiD0JCzXGDaBe/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <span class="jo-resource-main">
+              <span class="jo-resource-title">Real Analysis</span>
+              <span class="jo-meta">Math 131A · UCLA</span>
+            </span>
+            <span class="jo-resource-action">PDF <span class="jo-arrow" aria-hidden="true">↗</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="jo-resource" href="https://drive.google.com/file/d/1JCBIYla-c90moB7e6-ubBHcHZs7yPxHY/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <span class="jo-resource-main">
+              <span class="jo-resource-title">Morse Theory and Contact Topology</span>
+              <span class="jo-meta">Math 7400 · University of Iowa</span>
+            </span>
+            <span class="jo-resource-action">PDF <span class="jo-arrow" aria-hidden="true">↗</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="jo-resource" href="https://drive.google.com/file/d/1Hb6L7oSELJz8A6OQEQRHZl9KMm4w4O2y/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <span class="jo-resource-main">
+              <span class="jo-resource-title">Linear Algebra</span>
+              <span class="jo-meta">Math 115A · UCLA</span>
+            </span>
+            <span class="jo-resource-action">PDF <span class="jo-arrow" aria-hidden="true">↗</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="jo-resource" href="https://drive.google.com/file/d/17n8eX4IHW7LfZe9grT5sLT8LSUQYt3zW/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <span class="jo-resource-main">
+              <span class="jo-resource-title">Multivariable Differential Calculus</span>
+              <span class="jo-meta">Math 32AH · UCLA</span>
+            </span>
+            <span class="jo-resource-action">PDF <span class="jo-arrow" aria-hidden="true">↗</span></span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="jo-section jo-music" aria-labelledby="jo-music-title">
+      <header class="jo-music-header">
+        <h2 id="jo-music-title">Music</h2>
+        <a class="jo-channel" href="https://www.youtube.com/channel/UCs4t6JNwKyfnbIWZVkdPzew" target="_blank" rel="noopener noreferrer">YouTube channel <span aria-hidden="true">↗</span></a>
+      </header>
+      <a class="jo-article" href="https://dailybruin.com/2022/04/06/graduate-student-derives-success-with-youtube-channel-that-adds-math-to-music" target="_blank" rel="noopener noreferrer">
+        <span class="jo-article-media">
+          <img class="jo-article-image" src="assets/daily-bruin.jpg" width="800" height="610" alt="Joe Breen in the Daily Bruin feature" loading="lazy" decoding="async">
+        </span>
+        <span class="jo-article-body">
+          <span class="jo-article-source">Daily Bruin · April 6, 2022</span>
+          <span class="jo-article-title">Graduate student derives success with YouTube channel that adds math to music</span>
+          
+          <span class="jo-article-cta">Read article <span aria-hidden="true">↗</span></span>
+        </span>
+      </a>
+      <p class="jo-image-credit">Image: Daily Bruin</p>
+    </section>
+  </div>
+</main>
+</body></html>

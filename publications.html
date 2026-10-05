@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications — Joseph Breen</title>
+  <meta name="description" content="Preprints and publications by Joseph Breen, University of Alabama.">
+  <style>html,body { margin: 0; padding: 0; background: #fff; }</style>
+</head>
+<body>
+<!--
+  Joseph Breen — publications.html, prepared for GitHub Pages.
+  Internal page links are relative and open in the same tab.
+  Numbering descends across both sections. When adding a paper, update
+  each relevant list start and --jb-start (one more than start).
+-->
+<style>
+  #jb-publications {
+    --jb-paper: #ffffff;
+    --jb-ink: #2a2728;
+    --jb-muted: #6d6668;
+    --jb-accent: #9e1b32;
+    --jb-on-accent: #ffffff;
+    --jb-line: #e5dfe0;
+    --jb-hover: #fcf5f6;
+    --jb-link-line: #d7a6af;
+    box-sizing: border-box;
+    background: var(--jb-paper);
+    color: var(--jb-ink);
+    color-scheme: light;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.45;
+    padding: 28px 32px 36px;
+    margin: 0;
+    -webkit-text-size-adjust: 100%;
+  }
+  #jb-publications *,
+  #jb-publications *::before,
+  #jb-publications *::after { box-sizing: border-box; }
+  #jb-publications .jb-inner { max-width: 920px; margin: 0 auto; }
+  #jb-publications .jb-topbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px 28px;
+    padding-bottom: 19px;
+    border-bottom: 1px solid var(--jb-line);
+  }
+  #jb-publications .jb-identity {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    min-width: 0;
+  }
+  #jb-publications .jb-name {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
+  #jb-publications .jb-affiliation {
+    margin: 0;
+    color: var(--jb-muted);
+    font-size: 13px;
+  }
+  #jb-publications .jb-nav { display: flex; flex-wrap: wrap; gap: 9px; }
+  #jb-publications .jb-nav a { display: inline-flex; justify-content: center; align-items: center; gap: 9px; min-height: 42px; padding: 10px 15px; border: 1px solid var(--jb-link-line); border-radius: 4px; background: var(--jb-hover); color: var(--jb-accent); font-size: 15px; font-weight: 500; line-height: 1.2; text-decoration: none; white-space: nowrap; transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease; }
+  #jb-publications .jb-nav a:hover { background: var(--jb-accent); border-color: var(--jb-accent); color: var(--jb-on-accent); text-decoration: none; }
+  #jb-publications .jb-nav .jb-arrow { font-size: 12px; opacity: .8; }
+  #jb-publications h1 {
+    margin: 18px 0 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -.025em;
+  }
+  #jb-publications header { padding-bottom: 20px; }
+  #jb-publications .jb-section { margin: 0 0 24px; }
+  #jb-publications .jb-section:last-child { margin-bottom: 0; }
+  #jb-publications h2 {
+    margin: 0;
+    padding: 8px 0;
+    border: 0;
+    background-image: linear-gradient(90deg, var(--jb-accent) 0 28px, var(--jb-line) 28px 100%);
+    background-size: 100% 1px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    color: var(--jb-accent);
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 600;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+  }
+  #jb-publications ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: jb-item var(--jb-start, 0);
+  }
+  #jb-publications li {
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    grid-template-columns: 26px minmax(0, 1fr);
+    column-gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--jb-line);
+    counter-increment: jb-item -1;
+  }
+  #jb-publications li::before {
+    content: counter(jb-item, decimal-leading-zero);
+    padding-top: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--jb-muted);
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  #jb-publications li::after {
+    content: "";
+    position: absolute;
+    inset: 4px -10px;
+    z-index: -1;
+    border-radius: 4px;
+    background: var(--jb-hover);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 140ms ease;
+  }
+  #jb-publications li:focus-within::after { opacity: 1; }
+  #jb-publications li:focus-within::before { color: var(--jb-accent); }
+  @media (hover: hover) and (pointer: fine) {
+    #jb-publications li:hover::after { opacity: 1; }
+    #jb-publications li:hover::before { color: var(--jb-accent); }
+  }
+  #jb-publications .jb-paper { min-width: 0; }
+  #jb-publications h3 {
+    margin: 0 0 3px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.35;
+    overflow-wrap: break-word;
+  }
+  #jb-publications h3 a {
+    color: var(--jb-ink);
+    text-decoration: none;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    transition: color 140ms ease;
+  }
+  #jb-publications h3 a:hover { color: var(--jb-accent); text-decoration: underline; }
+  #jb-publications .jb-authors,
+  #jb-publications .jb-citation {
+    display: inline;
+    margin: 0;
+    color: var(--jb-muted);
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  #jb-publications .jb-authors { display: block; }
+  #jb-publications .jb-citation em { color: var(--jb-ink); font-weight: 700; }
+  #jb-publications .jb-links {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0 12px;
+    vertical-align: baseline;
+    margin: 0 0 0 8px;
+  }
+  #jb-publications .jb-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 22px;
+    color: var(--jb-accent);
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: var(--jb-link-line);
+  }
+  #jb-publications .jb-links a::after {
+    content: "↗";
+    margin-left: 3px;
+    font-size: 12px;
+    line-height: 1;
+  }
+  #jb-publications .jb-links a:hover { text-decoration-color: currentColor; }
+  #jb-publications a:focus-visible {
+    outline: 2px solid var(--jb-accent);
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+  @media (max-width: 680px) {
+    #jb-publications .jb-topbar { gap: 13px; padding-bottom: 17px; }
+    #jb-publications .jb-nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; gap: 8px; }
+    #jb-publications .jb-nav a { min-height: 44px; padding: 10px 6px; font-size: 14px; }
+    #jb-publications .jb-nav .jb-arrow { display: none; }
+  }
+  @media (max-width: 540px) {
+    #jb-publications { padding: 22px 18px 28px; }
+    #jb-publications header { padding-bottom: 18px; }
+    #jb-publications h1 { margin-top: 18px; font-size: 30px; }
+    #jb-publications li { grid-template-columns: 22px minmax(0, 1fr); column-gap: 10px; padding: 11px 0; }
+    #jb-publications h3 { font-size: 17px; }
+  }
+  @media (max-width: 370px) {
+    #jb-publications .jb-nav a { font-size: 13px; }
+  }
+  @media (pointer: coarse) {
+    #jb-publications .jb-nav a { min-height: 44px; }
+    #jb-publications .jb-links a { min-height: 44px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #jb-publications li::after,
+    #jb-publications .jb-nav a,
+    #jb-publications h3 a { transition: none; }
+  }
+  @media print {
+    #jb-publications { padding: 0; }
+    #jb-publications li { break-inside: avoid; }
+    #jb-publications .jb-links, #jb-publications .jb-nav { display: none; }
+    #jb-publications li::after { display: none; }
+  }
+</style>
+
+<main id="jb-publications" aria-labelledby="jb-title">
+  <div class="jb-inner">
+    <header>
+      <div class="jb-topbar">
+        <div class="jb-identity">
+          <p class="jb-name">Joseph Breen</p>
+          <p class="jb-affiliation">Mathematics · University of Alabama</p>
+        </div>
+        <nav class="jb-nav" aria-label="Main navigation">
+          <a href="index.html">Home </a>
+          <a href="teaching.html">Teaching </a>
+          <a href="other.html">Other </a>
+        </nav>
+      </div>
+      <h1 id="jb-title">Publications</h1>
+    </header>
+
+    <section class="jb-section" aria-labelledby="jb-preprints">
+      <h2 id="jb-preprints">Preprints</h2>
+      <ol role="list" reversed start="13" style="--jb-start: 14;">
+        <!-- Paper 13 -->
+        <li>
+          <article class="jb-paper">
+            <h3><a href="https://arxiv.org/abs/2609.30182" target="_blank" rel="noopener noreferrer">Derivative links in contact topology</a></h3>
+            <p class="jb-authors">With A. Zupan</p>
+            <p class="jb-citation">Preprint, 2026</p>
+            <div class="jb-links"><a href="https://arxiv.org/abs/2609.30182" target="_blank" rel="noopener noreferrer" aria-label="Derivative links in contact topology on arXiv">arXiv</a></div>
+          </article>
+        </li>
+        <!-- Paper 12 -->
+        <li>
+          <article class="jb-paper">
+            <h3><a href="https://arxiv.org/abs/2604.27213" target="_blank" rel="noopener noreferrer">Hard Legendrian unknots</a></h3>
+            <p class="jb-authors">With A. Christian and A. Wu</p>
+            <p class="jb-citation">Preprint, 2026</p>
+            <div class="jb-links"><a href="https://arxiv.org/abs/2604.27213" target="_blank" rel="noopener noreferrer" aria-label="Hard Legendrian unknots on arXiv">arXiv</a></div>
+          </article>
+        </li>
+        <!-- Paper 11 -->
+        <li>
+          <article class="jb-paper">
+            <h3><a href="https://arxiv.org/abs/1907.06025" target="_blank" rel="noopener noreferrer">Convex hypersurface theory in contact topology</a></h3>
+            <p class="jb-authors">With A. Christian, K. Honda, and Y. Huang</p>
+            <p class="jb-citation">Preprint, 2026</p>
+            <div class="jb-links"><a href="https://arxiv.org/abs/1907.06025" target="_blank" rel="noopener noreferrer" aria-label="Convex hypersurface theory in contact topology on arXiv">arXiv</a></div>
+          </article>
+        </li>
+        <!-- Paper 10 -->
+        <li>
+          <article class="jb-paper">
+            <h3><a href="https://arxiv.org/abs/2601.02524" target="_blank" rel="noopener noreferrer">Lagrangian slice disks with symplectomorphic exteriors</a></h3>
+            <p class="jb-citation">Preprint, 2026</p>
+            <div class="jb-links"><a href="https://arxiv.org/abs/2601.02524" target="_blank" rel="noopener noreferrer" aria-label="Lagrangian slice disks with symplectomorphic exteriors on arXiv">arXiv</a></div>
+          </article>
+        </li>
+        <!-- Paper 9 -->
+        <li>
+          <article class="jb-paper">
+            <h3><a href="https://arxiv.org/abs/2510.12170" target="_blank" rel="noopener noreferrer">Regular Lagrangians in Lefschetz fibrations</a></h3>
+            <p class="jb-authors">With A. Roy and L. Wang</p>
+            <p class="jb-citation">Preprint, 2025</p>
+            <div class="jb-links"><a href="https://arxiv.org/abs/2510.12170" target="_blank" rel="noopener noreferrer" aria-label="Regular Lagrangians in Lefschetz fibrations on arXiv">arXiv</a></div>
+          </article>
+        </li>
+        <!-- Paper 8 -->
+        <li>
+          <article class="jb-paper">
+            <h3><a href="https://arxiv.org/abs/2410.21031" target="_blank" rel="noopener noreferrer">Regularly slice implies once-stably decomposably slice</a></h3>
+            <p class="jb-citation">Preprint, 2024</p>
+            <div class="jb-links"><a href="https://arxiv.org/abs/2410.21031" target="_blank" rel="noopener noreferrer" aria-label="Regularly slice implies once-stably decomposably slice on arXiv">arXiv</a></div>
+          </article>
+        </li>
+        <!-- Paper 7 -->
+        <li>
+          <article class="jb-paper">
+            <h3><a href="https://arxiv.org/abs/2307.02317" target="_blank" rel="noopener noreferrer">The Giroux correspondence in arbitrary dimensions</a></h3>
+            <p class="jb-authors">With K. Honda and Y. Huang</p>
+            <p class="jb-citation">Preprint, 2023</p>
+            <div class="jb-links"><a href="https://arxiv.org/abs/2307.02317" target="_blank" rel="noopener noreferrer" aria-label="The Giroux correspondence in arbitrary dimensions on arXiv">arXiv</a></div>
+          </article>
+        </li>
+      </ol>
+    </section>
+
+    <section class="jb-section" aria-labelledby="jb-published">
+      <h2 id="jb-published">Published &amp; accepted</h2>
+      <ol role="list" reversed start="6" style="--jb-start: 7;">
+        <!-- Paper 6 -->
+        <li>
+          <article class="jb-paper">
+            <h3><a href="https://arxiv.org/abs/2410.04564" target="_blank" rel="noopener noreferrer">Bypass moves in convex hypersurface theory</a></h3>
+            <p class="jb-authors">With A. Christian</p>
+            <p class="jb-citation"><em>J. Symplectic Geom.</em> (2027), to appear</p>
+            <div class="jb-links">
+              <a href="https://arxiv.org/abs/2410.04564" target="_blank" rel="noopener noreferrer" aria-label="Bypass moves in convex hypersurface theory on arXiv">arXiv</a>
+              <a href="https://intlpress.com/journals/journalList?p=4&id=1804416065949724674" target="_blank" rel="noopener noreferrer" aria-label="Bypass moves in convex hypersurface theory on the journal's accepted papers page">Journal</a>
+            </div>
+          </article>
+        </li>
+        <!-- Paper 5 -->
+        <li>
+          <article class="jb-paper">
+            <h3><a href="https://arxiv.org/abs/2506.12612" target="_blank" rel="noopener noreferrer">Non-orientable Nurikabe</a></h3>
+            <p class="jb-authors">With E. Copeland</p>
+            <p class="jb-citation"><em>J. Comb.</em> 17 (2026), 483–505</p>
+            <div class="jb-links">
+              <a href="https://arxiv.org/abs/2506.12612" target="_blank" rel="noopener noreferrer" aria-label="Non-orientable Nurikabe on arXiv">arXiv</a>
+              <a href="https://dx.doi.org/10.4310/JOC.260511230054" target="_blank" rel="noopener noreferrer" aria-label="Non-orientable Nurikabe journal article">Journal</a>
+            </div>
+          </article>
+        </li>
+        <!-- Paper 4 -->
+        <li>
+          <article class="jb-paper">
+            <h3><a href="https://arxiv.org/abs/2109.07615" target="_blank" rel="noopener noreferrer">Torus bundle Liouville domains are stably Weinstein</a></h3>
+            <p class="jb-authors">With A. Christian</p>
+            <p class="jb-citation"><em>J. Topol.</em> 18 (2025), e70052</p>
+            <div class="jb-links">
+              <a href="https://arxiv.org/abs/2109.07615" target="_blank" rel="noopener noreferrer" aria-label="Torus bundle Liouville domains are stably Weinstein on arXiv">arXiv</a>
+              <a href="https://doi.org/10.1112/topo.70052" target="_blank" rel="noopener noreferrer" aria-label="Torus bundle Liouville domains are stably Weinstein journal article">Journal</a>
+            </div>
+          </article>
+        </li>
+        <!-- Paper 3 -->
+        <li>
+          <article class="jb-paper">
+            <h3><a href="https://arxiv.org/abs/2311.16058" target="_blank" rel="noopener noreferrer">Folded symplectic forms in contact topology</a></h3>
+            <p class="jb-citation"><em>J. Geom. Phys.</em> 201 (2024), 105213</p>
+            <div class="jb-links">
+              <a href="https://arxiv.org/abs/2311.16058" target="_blank" rel="noopener noreferrer" aria-label="Folded symplectic forms in contact topology on arXiv">arXiv</a>
+              <a href="https://www.sciencedirect.com/science/article/pii/S0393044024001141" target="_blank" rel="noopener noreferrer" aria-label="Folded symplectic forms in contact topology journal article">Journal</a>
+            </div>
+          </article>
+        </li>
+        <!-- Paper 2 -->
+        <li>
+          <article class="jb-paper">
+            <h3><a href="https://arxiv.org/abs/1912.01174" target="_blank" rel="noopener noreferrer">Morse-Smale characteristic foliations and convexity in contact manifolds</a></h3>
+            <p class="jb-citation"><em>Proc. Amer. Math. Soc.</em> 149 (2021), 3977–3989</p>
+            <div class="jb-links">
+              <a href="https://arxiv.org/abs/1912.01174" target="_blank" rel="noopener noreferrer" aria-label="Morse-Smale characteristic foliations and convexity in contact manifolds on arXiv">arXiv</a>
+              <a href="https://www.ams.org/journals/proc/2021-149-09/S0002-9939-2021-15484-1/home.html" target="_blank" rel="noopener noreferrer" aria-label="Morse-Smale characteristic foliations and convexity in contact manifolds journal article">Journal</a>
+            </div>
+          </article>
+        </li>
+        <!-- Paper 1 -->
+        <li>
+          <article class="jb-paper">
+            <h3><a href="https://www.sciencedirect.com/science/article/pii/S0024379516306346" target="_blank" rel="noopener noreferrer">On the sign characteristic of Hermitian linearizations in DL(P)</a></h3>
+            <p class="jb-authors">With M. Bueno, S. Ford, and S. Furtado</p>
+            <p class="jb-citation"><em>Linear Algebra Appl.</em> 519 (2017), 73–101</p>
+            <div class="jb-links"><a href="https://www.sciencedirect.com/science/article/pii/S0024379516306346" target="_blank" rel="noopener noreferrer" aria-label="On the sign characteristic of Hermitian linearizations in DL(P) journal article">Journal</a></div>
+          </article>
+        </li>
+      </ol>
+    </section>
+  </div>
+</main>
+
+</body>
+</html>
