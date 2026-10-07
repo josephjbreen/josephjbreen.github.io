@@ -11,8 +11,9 @@
 <!--
   Joseph Breen — index.html, prepared for GitHub Pages.
   Internal page links are relative and open in the same tab.
-  The JB headshot block and the slideshow photos/captions are placeholders.
-  Slideshow images are in assets/; source credits remain with each slide.
+  The headshot uses assets/headshot.jpg, uploaded separately to the repository.
+  Slideshow photos are uploaded separately to assets/.
+  Each slide lists its filename and place/year caption below.
 -->
 <style>
   #jb-home {
@@ -24,9 +25,6 @@
     --jh-rule: #e5dfe0;
     --jh-soft: #fcf5f6;
     --jh-photo-mat: #f3f0ef;
-    --jh-portrait-top: #f8f5f3;
-    --jh-portrait-bottom: #e9e1df;
-    --jh-portrait-letters: #987d82;
     --jh-link-line: #d7a6af;
     --jh-portrait-shadow: rgba(42, 39, 40, .07);
     background: var(--jh-paper);
@@ -58,9 +56,6 @@
   #jb-home .jh-bio p { margin: 0 0 13px; }
   #jb-home .jh-headshot { grid-column: 2; grid-row: 1 / span 2; align-self: start; margin: 0; padding: 5px; aspect-ratio: 4 / 5; overflow: hidden; border: 1px solid var(--jh-rule); border-radius: 2px; background: var(--jh-paper); box-shadow: 0 3px 12px var(--jh-portrait-shadow); }
   #jb-home .jh-headshot img { display: block; width: 100%; height: 100%; object-fit: cover; }
-  #jb-home .jh-headshot-placeholder { height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 14px; background: linear-gradient(150deg, var(--jh-portrait-top), var(--jh-portrait-bottom)); }
-  #jb-home .jh-headshot-initials { color: var(--jh-portrait-letters); font: 400 66px/1 Georgia, 'Times New Roman', serif; letter-spacing: -.045em; }
-  #jb-home .jh-headshot-label { color: var(--jh-muted); font-size: 11px; letter-spacing: .11em; text-transform: uppercase; }
   #jb-home .jh-contact { display: flex; flex-wrap: wrap; gap: 12px 35px; margin: 21px 0 0; padding-top: 15px; border-top: 1px solid var(--jh-rule); }
   #jb-home .jh-contact div { min-width: 0; }
   #jb-home .jh-contact dt { color: var(--jh-muted); font-size: 11px; letter-spacing: .07em; text-transform: uppercase; }
@@ -74,8 +69,6 @@
   #jb-home .jh-slide img { display: block; width: 100%; height: 100%; object-fit: cover; }
   #jb-home .jh-gallery-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 9px 20px; padding-top: 10px; }
   #jb-home .jh-caption { margin: 0; font-size: 13px; line-height: 1.5; }
-  #jb-home .jh-credit { color: var(--jh-muted); font-size: 11px; line-height: 1.5; text-decoration: none; }
-  #jb-home .jh-credit:hover { color: var(--jh-crimson); text-decoration: underline; }
   #jb-home .jh-gallery-actions { display: none; align-items: center; gap: 3px; }
   #jb-home.jh-ready .jh-gallery-actions { display: flex; }
   #jb-home .jh-gallery-actions button { display: inline-flex; justify-content: center; align-items: center; min-width: 34px; min-height: 34px; padding: 4px 8px; border: 0; border-radius: 3px; background: transparent; color: var(--jh-ink); font: 400 14px/1.2 Arial, Helvetica, sans-serif; }
@@ -94,9 +87,6 @@
     #jb-home .jh-role { font-size: 13px; }
     #jb-home .jh-heading { align-self: center; }
     #jb-home .jh-headshot { grid-row: 1; padding: 4px; }
-    #jb-home .jh-headshot-initials { font-size: 43px; }
-    #jb-home .jh-headshot-placeholder { gap: 9px; }
-    #jb-home .jh-headshot-label { font-size: 11px; letter-spacing: .035em; }
     #jb-home .jh-bio { grid-column: 1 / -1; grid-row: 2; }
     #jb-home .jh-contact { margin-top: 18px; }
     #jb-home .jh-stage { aspect-ratio: 3 / 2; }
@@ -139,11 +129,8 @@
         <h1 id="jh-name">Joseph Breen</h1>
         <p class="jh-role">Assistant Professor of Mathematics</p>
       </div>
-      <figure class="jh-headshot" aria-label="Placeholder for Joseph Breen's headshot">
-        <div class="jh-headshot-placeholder">
-          <span class="jh-headshot-initials" aria-hidden="true">JB</span>
-          <span class="jh-headshot-label">Headshot</span>
-        </div>
+      <figure class="jh-headshot">
+        <img src="assets/headshot.jpg" alt="Joseph Breen" decoding="async">
       </figure>
       <div class="jh-bio">
         <p>I am an assistant professor (tenure-track) at the <a href="https://math.ua.edu/" target="_blank" rel="noopener noreferrer">University of Alabama</a>. My research interests are in contact and symplectic topology.</p>
@@ -157,20 +144,61 @@
 
     <section class="jh-gallery" aria-label="Photographs" aria-roledescription="carousel">
       <div class="jh-stage" data-gallery-stage="">
-        <figure class="jh-slide is-active" data-slide="" data-caption="Lake and mist" data-credit="Placeholder photo · Ivan Rohovchenko / Unsplash" data-source="https://unsplash.com/photos/a-lake-with-trees-and-mountains-in-the-background-8fVmVlnrN5k" aria-hidden="false">
-          <img src="assets/home-lake.jpg" alt="Misty mountains and dark evergreen trees reflected in a still lake." width="1200" height="600">
+        <figure class="jh-slide is-active" data-slide="" data-caption="Alabama, 2025" aria-hidden="false">
+          <img src="assets/alabama2025.jpg" alt="Alabama, 2025" decoding="async">
         </figure>
-        <figure class="jh-slide" data-slide="" data-caption="Coastal light" data-credit="Placeholder photo · Unsplash" data-source="https://unsplash.com/es/s/fotos/cielo-pastel" aria-hidden="true">
-          <img src="assets/home-coast.jpg" alt="A quiet seashore beneath a pale blue and pink sky." width="1200" height="600">
+        <figure class="jh-slide" data-slide="" data-caption="Banff, 2023" aria-hidden="true">
+          <img src="assets/banff2023.jpeg" alt="Banff, 2023" decoding="async" loading="lazy">
+        </figure>
+        <figure class="jh-slide" data-slide="" data-caption="Budapest, 2026" aria-hidden="true">
+          <img src="assets/budapest2026.jpg" alt="Budapest, 2026" decoding="async" loading="lazy">
+        </figure>
+        <figure class="jh-slide" data-slide="" data-caption="California, 2021" aria-hidden="true">
+          <img src="assets/california2021.jpeg" alt="California, 2021" decoding="async" loading="lazy">
+        </figure>
+        <figure class="jh-slide" data-slide="" data-caption="California, 2024" aria-hidden="true">
+          <img src="assets/california2024.jpg" alt="California, 2024" decoding="async" loading="lazy">
+        </figure>
+        <figure class="jh-slide" data-slide="" data-caption="Chicago, 2022" aria-hidden="true">
+          <img src="assets/chicago2022.jpeg" alt="Chicago, 2022" decoding="async" loading="lazy">
+        </figure>
+        <figure class="jh-slide" data-slide="" data-caption="Florence, 2024" aria-hidden="true">
+          <img src="assets/florence2024.jpg" alt="Florence, 2024" decoding="async" loading="lazy">
+        </figure>
+        <figure class="jh-slide" data-slide="" data-caption="Iowa, 2024" aria-hidden="true">
+          <img src="assets/iowa2024.jpg" alt="Iowa, 2024" decoding="async" loading="lazy">
+        </figure>
+        <figure class="jh-slide" data-slide="" data-caption="London, 2022" aria-hidden="true">
+          <img src="assets/london2022.jpeg" alt="London, 2022" decoding="async" loading="lazy">
+        </figure>
+        <figure class="jh-slide" data-slide="" data-caption="Los Angeles, 2018" aria-hidden="true">
+          <img src="assets/losangeles2018.jpg" alt="Los Angeles, 2018" decoding="async" loading="lazy">
+        </figure>
+        <figure class="jh-slide" data-slide="" data-caption="Mexico City, 2018" aria-hidden="true">
+          <img src="assets/mexicocity2018.jpg" alt="Mexico City, 2018" decoding="async" loading="lazy">
+        </figure>
+        <figure class="jh-slide" data-slide="" data-caption="Naples, 2022" aria-hidden="true">
+          <img src="assets/naples2022.jpeg" alt="Naples, 2022" decoding="async" loading="lazy">
+        </figure>
+        <figure class="jh-slide" data-slide="" data-caption="Northwestern, 2018" aria-hidden="true">
+          <img src="assets/northwestern2018.jpg" alt="Northwestern, 2018" decoding="async" loading="lazy">
+        </figure>
+        <figure class="jh-slide" data-slide="" data-caption="Rome, 2024" aria-hidden="true">
+          <img src="assets/rome2024.jpg" alt="Rome, 2024" decoding="async" loading="lazy">
+        </figure>
+        <figure class="jh-slide" data-slide="" data-caption="Utah, 2026" aria-hidden="true">
+          <img src="assets/utah2026.jpg" alt="Utah, 2026" decoding="async" loading="lazy">
+        </figure>
+        <figure class="jh-slide" data-slide="" data-caption="Yosemite, 2019" aria-hidden="true">
+          <img src="assets/yosemite2019.jpg" alt="Yosemite, 2019" decoding="async" loading="lazy">
         </figure>
       </div>
       <div class="jh-gallery-footer">
         <div>
-          <p class="jh-caption" data-photo-caption="">Lake and mist</p>
-          <a class="jh-credit" data-photo-credit="" href="https://unsplash.com/photos/a-lake-with-trees-and-mountains-in-the-background-8fVmVlnrN5k" target="_blank" rel="noopener noreferrer">Placeholder photo · Ivan Rohovchenko / Unsplash</a>
+          <p class="jh-caption" data-photo-caption="">Alabama, 2025</p>
         </div>
         <div class="jh-gallery-actions" aria-label="Slideshow controls">
-          <span class="jh-photo-count" data-photo-count="" aria-hidden="true">01 / 02</span>
+          <span class="jh-photo-count" data-photo-count="" aria-hidden="true">01 / 16</span>
           <button type="button" class="cursor-interaction" data-action="previous" aria-label="Previous photograph" disabled>←</button>
           <button type="button" class="cursor-interaction" data-action="toggle" aria-label="Pause slideshow" disabled>Pause</button>
           <button type="button" class="cursor-interaction" data-action="next" aria-label="Next photograph" disabled>→</button>
@@ -191,10 +219,9 @@
   const next = root.querySelector('[data-action="next"]');
   const toggle = root.querySelector('[data-action="toggle"]');
   const caption = root.querySelector('[data-photo-caption]');
-  const credit = root.querySelector('[data-photo-credit]');
   const count = root.querySelector('[data-photo-count]');
   const status = root.querySelector('[data-photo-status]');
-  if (!gallery || slides.length < 2 || !previous || !next || !toggle || !caption || !credit || !count || !status) return;
+  if (!gallery || slides.length < 2 || !previous || !next || !toggle || !caption || !count || !status) return;
   root.dataset.galleryReady = 'true';
   root.classList.add('jh-ready');
   [previous, next, toggle].forEach(button => { button.disabled = false; });
@@ -230,8 +257,6 @@
     });
     const slide = slides[current];
     caption.textContent = slide.dataset.caption;
-    credit.textContent = slide.dataset.credit;
-    credit.href = slide.dataset.source;
     count.textContent = String(current + 1).padStart(2, '0') + ' / ' + String(slides.length).padStart(2, '0');
     if (announce) status.textContent = 'Photograph ' + (current + 1) + ' of ' + slides.length + ': ' + slide.dataset.caption;
   }
